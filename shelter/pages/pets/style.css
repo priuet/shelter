@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    font-size: 10px;
+}
+body {
+    margin: 0 auto;
+    padding: 0;    
+    font-family: 'Arial', 'Georgia';
+    width: 1280px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    overflow: hidden;
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+header {
+    color: #fff;
+    height: 120px;
+}
+.header_content {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 30px 40px;
+}
+.header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column;
+}
+.logo_title {
+    font-family: 'Georgia';
+    font-size: 32px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin: 0;
+}
+.logo_subtitle {
+    font-family: 'Arial';
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #292929;
+    margin: 0;
+}
+.header_burger {
+    display: none;
+}
+.header_menu {
+    height: 27px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+.menu_list {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 443px;
+    list-style: none;
+}
+.header_menu_item {
+    font-family: 'Arial';
+    font-size: 15px;
+    line-height: 160%;
+}
+.header_menu_item a {
+    text-decoration: none;
+    color: #545454;
+}
+/*------Pets list styles-----*/
+.pets {
+    height: 1342px;
+    background-color: #f6f6f6;
+}
+.pets_wrapper {
+    width: 1200px;
+    /* display: flex; */
+    margin: 80px auto 100px auto;
+}
+.pets_content {
+    height: 1162px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pets_title {
+    font-family: 'Georgia';
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin: 0 auto;
+    width: 35%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.pets_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px 40px;
+    grid-template-areas:
+      ". . . ."
+      ". . . .";}
+.pet_item {
+    background: #FAFAFA;
+    border-radius: 9px;
+    width: 270px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.card_img {
+    width: 100%;
+}
+.card_title {
+    font-family: 'Georgia';
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+    margin-top: 24px;
+}
+.card_button {
+    margin: 30px auto;
+    padding: 15px 45px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: 'Georgia';
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+.card_button:active, 
+.card_button:focus {
+    outline: none;
+}
+/*---------navigation----------*/
+.navigation {
+    width: 340px;
+    height: 52px;
+    margin-top: 60px;
+}
+.navigation_wrapper {
+    display: flex;
+    justify-content: space-evenly
+}
+.slider_btn {
+    height: 52px;
+    width: 52px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: 'Georgia';
+    font-size: 20px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-sizing: border-box;
+    margin: 0 5px;
+}
+.slider_btn:active, 
+.slider_btn:focus {
+    outline: none;
+}
+.slider_btn:nth-child(1) {
+    margin-left: 0;
+}
+.slider_btn:last-child {
+    margin-right: 0;
+}
+.arrow_left {
+    border: 2px solid #CDCDCD;
+    color: #CDCDCD;
+}
+.arrow_right {
+    color: #292929;
+}
+.current {
+    background: #F1CDB3;
+}
+/*----footer----*/
+footer {
+    height: 35rem;
+    background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    color: #fff;
+}
+.footer_wrapper {
+    /* width: 62.5%; */
+}
+.footer_content {
+    height: 310px;
+    /* padding-top: 40px; */
+    /* margin-top: 40px; */
+    display: flex;
+    justify-content: space-between;
+    margin: 4.5rem 4rem 0;
+}
+.footer_contacts {
+    width: 27.8rem;
+}
+.footer_location {
+    width: 30rem;
+}
+.footer_title {
+    font-family: 'Georgia';
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 1rem 0;
+}
+.footer_text {
+    font-family: 'Georgia';
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.05em;
+    color: #F1CDB3;
+}
+.footer_icon {
+    content: "";
+    padding-right: 20px;
+}
+.footer_email,
+.footer_phone {
+    text-decoration: none;
+    display: flex;
+    margin: 18px 0;
+}
+.footer_address {
+    text-decoration: none;
+    display: flex;
+}
+.footer_text:hover {
+    border-bottom: 2px solid #F1CDB3;
+}
+.start-screen-btn:hover,
+.card_button:hover,
+.pets_button:hover,
+.credit_card:hover,
+.slider_btn:hover{
+    background: #FDDCC4;
+    cursor: pointer;
+}
+.menu_list a:hover {
+    border-bottom: 2px solid #F1CDB3;
+}
+/* Media
+======================= */
+@media (max-width: 768px) {
+    header {
+    position: fixed;
+    margin-bottom: 30px;
+    background-color: #fff;
+    width: 100%;
+    }
+    .pets {
+        margin-top: 100px;
+    }
+    .pets_wrapper {
+        margin: 0 auto;
+    }
+    .pets_content {
+        border: tomato solid 2px;
+        margin: 80px 40px;
+    }
+    .pets_title {
+        margin-bottom: 40px;
+    }
+    .pets_cards {
+        /* display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px 40px;
+        grid-template-areas:
+          ". ."
+          ". ."
+          ". ."; */
+        display: flex;
+        width: 660px;
+        align-items: start;
+        padding: 30px 40px;
+        overflow: hidden;
+    }
+    .pet_item {
+        margin-right: 40px;
+        margin-bottom: 30px;
+    }
+    
+}
